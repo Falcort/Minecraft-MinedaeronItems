@@ -1,0 +1,13 @@
+name: MinedaeronItems
+version : 0.1
+main: MinedaeronItems.main
+author: Falcort
+website: http://thibaultsouquet.fr/
+description: This plugin is design to create custom items
+commands:
+  Deuillegivre:
+    description: Vous donne Deuillgivre.
+    usage: /Deuillegivre
+  Ensanglante:
+    description: Vous donne Ensanglante.
+    usage: /Ensanglante
