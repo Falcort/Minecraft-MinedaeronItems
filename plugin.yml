@@ -5,9 +5,9 @@ author: Falcort
 website: http://thibaultsouquet.fr/
 description: This plugin is design to create custom items
 commands:
-  Deuillegivre:
-    description: Vous donne Deuillgivre.
-    usage: /Deuillegivre
-  Ensanglante:
-    description: Vous donne Ensanglante.
-    usage: /Ensanglante
+  sword:
+    description: sword pour la liste, sword plus le nom pour l'item
+    usage: /sword
+  axe:
+    description: axe pour la liste, axe plus le nom pour l'item
+    usage: /axe
