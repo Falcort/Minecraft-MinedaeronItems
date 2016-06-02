@@ -323,8 +323,8 @@ public class Axe
 		meta.setDisplayName(ChatColor.GOLD + "Ensanglante");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
-		lore.add(ChatColor.YELLOW + "Cette épée des milles véritées");
-		lore.add(ChatColor.YELLOW + "Contenue sur une clef USB de 1Go");
+		lore.add(ChatColor.YELLOW + "Née de la tristesse et le sable");
+		lore.add(ChatColor.YELLOW + "portée par de grands héros");
 		meta.setLore(lore);
 		Ensanglante.setItemMeta(meta);
 		

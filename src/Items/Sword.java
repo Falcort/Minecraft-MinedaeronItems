@@ -323,8 +323,8 @@ public class Sword
 		meta.setDisplayName(ChatColor.GOLD + "Epée des milles véritées");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
-		lore.add(ChatColor.YELLOW + "Cette épée des milles véritées");
-		lore.add(ChatColor.YELLOW + "Contenue sur une clef USB de 1Go");
+		lore.add(ChatColor.YELLOW + "Prédite par Salzman");
+		lore.add(ChatColor.YELLOW + "elle tue même les êtres sans vie");
 		meta.setLore(lore);
 		EDMV.setItemMeta(meta);
 		
