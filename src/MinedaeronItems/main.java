@@ -3,6 +3,7 @@ package MinedaeronItems;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import Commandes.AxeCommands;
+import Commandes.BowCommands;
 import Commandes.SwordCommands;
 
 public class main extends JavaPlugin
@@ -18,5 +19,6 @@ public class main extends JavaPlugin
 	{
 		this.getCommand("sword").setExecutor(new SwordCommands());
 		this.getCommand("axe").setExecutor(new AxeCommands());
+		this.getCommand("bow").setExecutor(new BowCommands());
 	}
 }

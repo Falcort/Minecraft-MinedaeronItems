@@ -2,7 +2,6 @@ package Items;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemFlag;
@@ -10,30 +9,31 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import net.md_5.bungee.api.ChatColor;
 
-public class Sword
+
+public class Bow
 {
 	/**
-	 * JavaDoc createBlafarde
-	 * This methode create a common sword name "Blafarde"
+	 * JavaDoc createZephyr
+	 * This methode create a common sword name "Zephyr"
 	 * 
-	 * @return Blafarde
+	 * @return Zephyr
 	 * @author Falcort alias Thibault SOUQUET
 	 * @version 0.2
 	 */
-	public static ItemStack createBlafarde()
+	public static ItemStack createZephyr()
 	{
-		ItemStack Blafarde = new ItemStack(Material.DIAMOND_SWORD, 1, (short)1);
-		ItemMeta meta = Blafarde.getItemMeta();
+		ItemStack Zephyr = new ItemStack(Material.BOW, 1, (short)1);
+		ItemMeta meta = Zephyr.getItemMeta();
 		meta.spigot().setUnbreakable(true);
 		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-		meta.setDisplayName(ChatColor.WHITE + "Blâfarde");
+		meta.setDisplayName(ChatColor.WHITE + "Zephyr");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
 		lore.add(ChatColor.YELLOW + "Sais pas");
 		meta.setLore(lore);
-		Blafarde.setItemMeta(meta);
+		Zephyr.setItemMeta(meta);
 		
-		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Blafarde);
+		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Zephyr);
         net.minecraft.server.v1_10_R1.NBTTagCompound nbt = nmsStack.hasTag() ? nmsStack.getTag() : new net.minecraft.server.v1_10_R1.NBTTagCompound();
         net.minecraft.server.v1_10_R1.NBTTagList NBTTags = new net.minecraft.server.v1_10_R1.NBTTagList();
         
@@ -80,32 +80,32 @@ public class Sword
         nbt.set("AttributeModifiers", NBTTags);
         nmsStack.setTag(nbt);
      
-        Blafarde = CraftItemStack.asBukkitCopy(nmsStack);
-		return Blafarde;
+        Zephyr = CraftItemStack.asBukkitCopy(nmsStack);
+		return Zephyr;
 	}
 	
 	/**
-	 * JavaDoc createJoyeuse
-	 * This methode create a uncommon sword name "Joyeuse"
+	 * JavaDoc createTDF
+	 * This methode create a uncommon sword name "TDF"
 	 * 
-	 * @return Joyeuse
+	 * @return TDF
 	 * @author Falcort alias Thibault SOUQUET
 	 * @version 0.2
 	 */
-	public static ItemStack createJoyeuse()
+	public static ItemStack createTDF()
 	{
-		ItemStack Joyeuse = new ItemStack(Material.DIAMOND_SWORD, 1, (short)1);
-		ItemMeta meta = Joyeuse.getItemMeta();
+		ItemStack TDF = new ItemStack(Material.BOW, 1, (short)1);
+		ItemMeta meta = TDF.getItemMeta();
 		meta.spigot().setUnbreakable(true);
 		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-		meta.setDisplayName(ChatColor.DARK_GREEN + "Joyeuse");
+		meta.setDisplayName(ChatColor.DARK_GREEN + "Trépas de finriel");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
 		lore.add(ChatColor.YELLOW + "Sais pas");
 		meta.setLore(lore);
-		Joyeuse.setItemMeta(meta);
+		TDF.setItemMeta(meta);
 		
-		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Joyeuse);
+		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(TDF);
         net.minecraft.server.v1_10_R1.NBTTagCompound nbt = nmsStack.hasTag() ? nmsStack.getTag() : new net.minecraft.server.v1_10_R1.NBTTagCompound();
         net.minecraft.server.v1_10_R1.NBTTagList NBTTags = new net.minecraft.server.v1_10_R1.NBTTagList();
         
@@ -152,32 +152,32 @@ public class Sword
         nbt.set("AttributeModifiers", NBTTags);
         nmsStack.setTag(nbt);
      
-        Joyeuse = CraftItemStack.asBukkitCopy(nmsStack);
-		return Joyeuse;
+        TDF = CraftItemStack.asBukkitCopy(nmsStack);
+		return TDF;
 	}
 	
 	/**
-	 * JavaDoc createRare
-	 * This methode create a rare sword name "Rare"
+	 * JavaDoc createFroki
+	 * This methode create a rare sword name "Froki"
 	 * 
 	 * @return rare
 	 * @author Falcort alias Thibault SOUQUET
 	 * @version 0.2
 	 */
-	public static ItemStack createRare()
+	public static ItemStack createFroki()
 	{
-		ItemStack Rare = new ItemStack(Material.DIAMOND_SWORD, 1, (short)1);
-		ItemMeta meta = Rare.getItemMeta();
+		ItemStack Froki = new ItemStack(Material.BOW, 1, (short)1);
+		ItemMeta meta = Froki.getItemMeta();
 		meta.spigot().setUnbreakable(true);
 		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-		meta.setDisplayName(ChatColor.BLUE + "Rare");
+		meta.setDisplayName(ChatColor.BLUE + "Froki");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
-		lore.add(ChatColor.YELLOW + "Rare");
+		lore.add(ChatColor.YELLOW + "Froki");
 		meta.setLore(lore);
-		Rare.setItemMeta(meta);
+		Froki.setItemMeta(meta);
 		
-		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Rare);
+		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Froki);
         net.minecraft.server.v1_10_R1.NBTTagCompound nbt = nmsStack.hasTag() ? nmsStack.getTag() : new net.minecraft.server.v1_10_R1.NBTTagCompound();
         net.minecraft.server.v1_10_R1.NBTTagList NBTTags = new net.minecraft.server.v1_10_R1.NBTTagList();
         
@@ -224,32 +224,32 @@ public class Sword
         nbt.set("AttributeModifiers", NBTTags);
         nmsStack.setTag(nbt);
      
-        Rare = CraftItemStack.asBukkitCopy(nmsStack);
-		return Rare;
+        Froki = CraftItemStack.asBukkitCopy(nmsStack);
+		return Froki;
 	}
 	
 	/**
-	 * JavaDoc createArcheus
-	 * This methode create a common sword name "Archeus"
+	 * JavaDoc createHarmonnie
+	 * This methode create a common sword name "Harmonnie"
 	 * 
-	 * @return Archeus
+	 * @return Harmonnie
 	 * @author Falcort alias Thibault SOUQUET
 	 * @version 0.2
 	 */
-	public static ItemStack createArcheus()
+	public static ItemStack createHarmonnie()
 	{
-		ItemStack Archeus = new ItemStack(Material.DIAMOND_SWORD, 1, (short)1);
-		ItemMeta meta = Archeus.getItemMeta();
+		ItemStack Harmonnie = new ItemStack(Material.BOW, 1, (short)1);
+		ItemMeta meta = Harmonnie.getItemMeta();
 		meta.spigot().setUnbreakable(true);
 		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-		meta.setDisplayName(ChatColor.DARK_PURPLE + "Archeus");
+		meta.setDisplayName(ChatColor.DARK_PURPLE + "Harmonnie");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
 		lore.add(ChatColor.YELLOW + "Epée du guerrie déchu Mor'Ladim");
 		meta.setLore(lore);
-		Archeus.setItemMeta(meta);
+		Harmonnie.setItemMeta(meta);
 		
-		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Archeus);
+		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Harmonnie);
         net.minecraft.server.v1_10_R1.NBTTagCompound nbt = nmsStack.hasTag() ? nmsStack.getTag() : new net.minecraft.server.v1_10_R1.NBTTagCompound();
         net.minecraft.server.v1_10_R1.NBTTagList NBTTags = new net.minecraft.server.v1_10_R1.NBTTagList();
         
@@ -296,33 +296,33 @@ public class Sword
         nbt.set("AttributeModifiers", NBTTags);
         nmsStack.setTag(nbt);
      
-        Archeus = CraftItemStack.asBukkitCopy(nmsStack);
-		return Archeus;
+        Harmonnie = CraftItemStack.asBukkitCopy(nmsStack);
+		return Harmonnie;
 	}
 	
 	/**
-	 * JavaDoc createEDMV
+	 * JavaDoc createThori
 	 * This methode create a common sword name "Epée des milles véritées"
 	 * 
-	 * @return EDMV
+	 * @return Thori
 	 * @author Falcort alias Thibault SOUQUET
 	 * @version 0.2
 	 */
-	public static ItemStack createEDMV()
+	public static ItemStack createThori()
 	{
-		ItemStack EDMV = new ItemStack(Material.DIAMOND_SWORD, 1, (short)1);
-		ItemMeta meta = EDMV.getItemMeta();
+		ItemStack Thori = new ItemStack(Material.BOW, 1, (short)1);
+		ItemMeta meta = Thori.getItemMeta();
 		meta.spigot().setUnbreakable(true);
 		meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-		meta.setDisplayName(ChatColor.GOLD + "Epée des milles véritées");
+		meta.setDisplayName(ChatColor.GOLD + "Thori’Dal");
 		meta.addItemFlags();
 		List<String> lore = new ArrayList<String>();
-		lore.add(ChatColor.YELLOW + "Prédite par Salzman");
-		lore.add(ChatColor.YELLOW + "elle tue même les êtres sans vie");
+		lore.add(ChatColor.YELLOW + "Née de la tristesse et le sable");
+		lore.add(ChatColor.YELLOW + "portée par de grands héros");
 		meta.setLore(lore);
-		EDMV.setItemMeta(meta);
+		Thori.setItemMeta(meta);
 		
-		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(EDMV);
+		net.minecraft.server.v1_10_R1.ItemStack nmsStack = org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack.asNMSCopy(Thori);
         net.minecraft.server.v1_10_R1.NBTTagCompound nbt = nmsStack.hasTag() ? nmsStack.getTag() : new net.minecraft.server.v1_10_R1.NBTTagCompound();
         net.minecraft.server.v1_10_R1.NBTTagList NBTTags = new net.minecraft.server.v1_10_R1.NBTTagList();
         
@@ -369,7 +369,7 @@ public class Sword
         nbt.set("AttributeModifiers", NBTTags);
         nmsStack.setTag(nbt);
      
-        EDMV = CraftItemStack.asBukkitCopy(nmsStack);
-		return EDMV;
+        Thori = CraftItemStack.asBukkitCopy(nmsStack);
+		return Thori;
 	}
 }

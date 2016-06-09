@@ -11,3 +11,6 @@ commands:
   axe:
     description: axe pour la liste, axe plus le nom pour l'item
     usage: /axe
+  bow:
+    description: bow pour la liste, axe plus le nom pour l'item
+    usage: /bow
